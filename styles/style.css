@@ -27,12 +27,16 @@
 
 .nav__logo {
   margin-left: 10px;
+  width: 58px;
+  height: 80px;
 }
 
 .nav__links {
   display: flex;
   column-gap: 20px;
-  list-style: none;
+  list-style-type: none;
+  margin: 8px 0 0;
+  padding: 0;
 }
 
 .nav__link {
@@ -47,17 +51,20 @@
   font-size: 62px;
   line-height: 76px;
   font-weight: 500;
+  justify-content: space-between;
 }
 
 .header__title {
   display: flex;
-  max-width: 690px;
-  font-size: 55px;
+  max-width: 635px;
+  font-size: 62px;
   margin-top: 128px;
+  line-height: 76px;
+  font-weight: 500;
 }
 
 .header__description {
-  max-width: 525px;
+  max-width: 515px;
   font-size: 20px;
   line-height: 30px;
   margin-top: 32px;
@@ -66,7 +73,7 @@
 .header__image {
   display: flex;
   justify-content: end;
-  max-width: 600px;
+  max-width: 636px;
   margin-top: 40px;
   margin-left: 100px;
 }
@@ -113,7 +120,6 @@
   font-weight: 400;
   margin: 0;
   color: #ffffff;
-  margin-bottom: 68px;
 }
 
 .staff__cards {
@@ -122,8 +128,10 @@
   justify-content: center;
   gap: 40px;
   box-sizing: border-box;
-  max-width: 810px;
-  margin: auto;
+  max-width: 760px;
+  margin: 68px auto 0;
+  padding: 0;
+  list-style-type: none;
 }
 .card {
   background-color: #fff;
@@ -165,4 +173,151 @@
   line-height: 20px;
   color: #838383;
   margin-top: auto;
+}
+
+.events {
+  padding: 100px 0 120px 80px;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+}
+
+.events__content {
+  flex-basis: 800px;
+}
+
+.events__heading {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  margin: 0;
+}
+
+.events__title {
+  font-size: 44px;
+  font-weight: 500;
+  line-height: 52px;
+  margin: 32px 0 0;
+}
+
+.events__info-section {
+  margin-top: 32px;
+}
+
+.event-info__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4px;
+  font-weight: 500;
+}
+
+.event-info__icon {
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 12px;
+  width: 24px;
+  height: 24px;
+}
+
+.event-info__text {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  margin: 0;
+}
+
+.events__description {
+  margin: 40px 0 60px;
+}
+
+.events__more {
+  color: #2f80ed;
+  text-decoration: none;
+}
+
+.events__cover {
+  border: #5e6161 2px solid;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 780px;
+  max-width: 780px;
+  position: relative;
+}
+
+.events__image {
+  max-width: 100%;
+}
+
+.person {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.person_name_feynman {
+  position: absolute;
+  right: 380px;
+  bottom: -1610px;
+}
+
+.person_name_burbidge {
+  position: absolute;
+  right: 168px;
+  top: 2230px;
+}
+
+.person_name_cannon {
+  position: absolute;
+  right: 230px;
+  top: 2660px;
+}
+
+.person_name_mitchell {
+  position: absolute;
+  right: 590px;
+  top: 2610px;
+}
+
+.person_name_tarter {
+  position: absolute;
+  right: 595px;
+  top: 2200px;
+}
+
+.person__image {
+  max-width: 100%;
+}
+
+.person__image_size_l {
+  width: 180px;
+}
+
+.person__image_size_m {
+  width: 100px;
+}
+
+.person__image_size_s {
+  width: 50%;
+}
+
+.person__image_size_a {
+  width: 50%;
+}
+
+.person__image_size_mm {
+  width: 30%;
+}
+
+.person__image_size_jt {
+  width: 55%;
+}
+
+.person__caption {
+  text-align: center;
+  font-size: 14px;
+  margin: 0;
 }
