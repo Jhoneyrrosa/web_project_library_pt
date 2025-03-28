@@ -161,9 +161,6 @@
   font-size: 16px;
   line-height: 24px;
   width: 250px;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 10;
   overflow: hidden;
 }
 
@@ -339,14 +336,14 @@
 .membership__steps {
   list-style-type: none;
   padding: 0;
-  margin: 100px 200px 0;
+  margin: 100px 0 0;
   gap: 40px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 .step {
-  width: 220px;
+  flex-basis: 220px;
 }
 
 .step__title {
@@ -364,7 +361,7 @@
 
 .step__description {
   margin: 10px 0 0;
-  width: 220;
+  width: 220px;
 }
 
 .footer {
@@ -393,25 +390,45 @@
 .footer__column-heading {
   display: flex;
   font-size: 15px;
+  margin-bottom: 20px;
 }
 
 .footer__list {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  gap: 16px;
 }
 
 .footer__list-item {
-  margin-top: 7px;
+  margin-top: 0/* No selection was provided, so I'll add a general improvement to the code */
+
+/* Add a CSS reset to ensure consistent styling across browsers */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Add a font family and font size to the body to set a default font */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+}px;
 }
 
 .footer__column-link {
   color: white;
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
 }
 
 .footer__social-icon {
-  color: #fff;
+  width: 16px;
+  height: 16px;
 }
 
 .footer__copyright {
