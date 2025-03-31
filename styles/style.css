@@ -58,7 +58,7 @@
   display: flex;
   max-width: 635px;
   font-size: 62px;
-  margin-top: 128px;
+  margin: 128px 0 0;
   line-height: 76px;
   font-weight: 500;
 }
@@ -67,7 +67,7 @@
   max-width: 515px;
   font-size: 20px;
   line-height: 30px;
-  margin-top: 32px;
+  margin: 32px 0 0;
 }
 
 .header__image {
@@ -403,21 +403,19 @@
 }
 
 .footer__list-item {
-  margin-top: 0/* No selection was provided, so I'll add a general improvement to the code */
+  margin-top: 0;
+}
 
-/* Add a CSS reset to ensure consistent styling across browsers */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-/* Add a font family and font size to the body to set a default font */
 body {
   font-family: Arial, sans-serif;
   font-size: 16px;
   line-height: 20px;
-}px;
 }
 
 .footer__column-link {
